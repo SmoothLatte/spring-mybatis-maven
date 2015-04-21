@@ -26,7 +26,7 @@
 	</listener>
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/app.xml</param-value>
+		<param-value>/WEB-INF/webmvct-servlet.xml</param-value>
 	</context-param>
 	<servlet>
 		<servlet-name>webmvct</servlet-name>

@@ -1,5 +1,7 @@
 package wifi.dao;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
@@ -21,4 +23,7 @@ public interface BookDao {
 	
 	@Select("select * from " + TABLE + " where id=#{id}")
 	public Book queryBook(long id);
+	
+	@Select("select * from " + TABLE)
+	public List<Book> queryAllBooks();
 }
